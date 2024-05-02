@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="../style/register.css" />
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="register-1">
+        <div class="register-2">
+          <h2>Sign Up</h2>
+        </div>
+        <div class="register-3">
+          <div class="register-title">
+            <h4>First Name :</h4>
+          </div>
+          <input
+            type="text"
+            placeholder="First Name"
+            class="input"
+            name="firstname"
+            id="firstname"
+          />
+        </div>
+        <div class="register-3">
+          <div class="register-title">
+            <h4>Last Name :</h4>
+          </div>
+          <input
+            type="text"
+            placeholder="Last Name"
+            class="input"
+            name="lastname"
+            id="lastname"
+          />
+        </div>
+        <div class="register-3">
+          <div class="register-title">
+            <h4>Email :</h4>
+          </div>
+          <input
+            type="email"
+            placeholder="abc@xyz.com"
+            class="input"
+            name="email"
+            id="email"
+          />
+        </div>
+        <div class="register-3">
+          <div class="register-title">
+            <h4>Phone Number :</h4>
+          </div>
+          <input
+            type="tel"
+            placeholder="0123456789"
+            class="input"
+            name="phoneNumber"
+            id="phoneNumber"
+          />
+        </div>
+        <div class="register-3">
+          <div class="register-title">
+            <h4>Password :</h4>
+          </div>
+          <input
+            type="password"
+            placeholder="Password"
+            class="input"
+            name="password"
+            id="password"
+          />
+        </div>
+        <div class="register-3">
+          <div class="register-title">
+            <h4>Confirm Password :</h4>
+          </div>
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            class="input"
+            name="confirmPassword"
+            id="confirmPassword"
+          />
+        </div>
+        <p id="message"></p>
+        <div class="register-4">
+          <button id="signup" onclick="signup()">Sign Up</button>
+        </div>
+        <div class="register-5">
+          <p>
+            Already have an Account?
+            <span id="login" onclick="login()">Log In</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="../JS/register.js"></script>
+    <script src="../JS/firebase.js"></script>
+  </body>
+</html>
